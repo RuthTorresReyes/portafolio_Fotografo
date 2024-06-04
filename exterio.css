@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e9d8a6;
+}
+
+/* barra Navegación */
+.navbar {
+    background-color: #03071e;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #005f73;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background-color: #ee9b00;
+    color: black;
+}
+
+.navbar a.active {
+    background-color: #94d2bd;
+    color: white;
+}
+
+.navbar .icon {
+    display: none;
+}
+.lo{
+    width: 30px;
+    height: 17px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+    .navbar .lo {
+        margin: 0 auto; /* Centra horizontalmente */
+        display: block; /* Asegura que ocupe el ancho completo disponible */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* Fin Barra de Navegación */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Para que las tarjetas se envuelvan en varias líneas */
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: center; /* Para centrar horizontalmente */
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px; /* Ancho de la tarjeta */
+    height: 300px; /* Alto de la tarjeta */
+    background-color: #f0f0f0; /* Color de fondo de la tarjeta */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+}
+
+.img {
+    flex: 1;
+    width: 100%; /* Ancho de la imagen */
+    height: 100%; /* Alto de la imagen */
+    border-radius: 10px; /* Borde redondeado igual al de la tarjeta */
+    object-fit: cover; /* Cubrir toda la imagen dentro del contenedor */
+}
+
+span{
+    display: block;
+    font-size: 3rem;
+    color:#005f73;
+    font-family: monospace;
+    text-align: center;
+    
+}
+
+/* Fin Footer */
+.social {
+    background-color: #03071e;
+    color: #b5dac9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social li {
+    list-style: none;
+}
+.social li a {
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.5);
+    transition: 0.5s;
+}
+.social li a:hover {
+    transform: scale(0.5) translateY(-15px);
+}
