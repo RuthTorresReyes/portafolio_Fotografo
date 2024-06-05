@@ -325,8 +325,7 @@ span{
         background-position: center;
         transition: background-size 0.5s; /* Transición suave */
     }
-    .texto, 
-    .boton  {
+    .texto {
         display: none;
     }
 }
@@ -334,7 +333,14 @@ span{
     .contenedorImg {
         background-size: auto 100%; 
     }
+
+    .boton {
+       
+        width: 150px;
+        
+    }
 }
+
 
 /* Texto */
 .texto2 p,
@@ -397,6 +403,20 @@ span{
     .texto4 h1,
     .texto5 h1 {
         font-size: 12px;
+    }
+}
+@media (max-width: 400px) {
+    .texto2 p,
+    .texto3 p,
+    .texto4 p,
+    .texto5 p {
+        font-size: 10px;   
+    }
+    .texto2 h1,
+    .texto3 h1,
+    .texto4 h1,
+    .texto5 h1 {
+        font-size: 10px;
     }
 }
 /* Fin reducción */

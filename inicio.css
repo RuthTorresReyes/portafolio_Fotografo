@@ -345,30 +345,7 @@ span{
     transform: translateY(2px); 
     color: #03071e;
 }
-
 /*Fin Boton*/
-
-/* Footer */
-/*
- .footer {
-    background-color: #03071e;
-    color: #b5dac9;
-    padding: 20px 0;
-    
-
-}
-.aboutSection {
-    text-align: center;
-}
-.Contact {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-   
-}
-.p{
-   background-color: aliceblue;
-} */
 
 /* Fin Footer */
 .social {
